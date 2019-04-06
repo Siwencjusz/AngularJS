@@ -1,0 +1,18 @@
+﻿<div class="main" ng-controller="productManagement">
+
+    <form ng-repeat="product in products">
+        <label>{{product.name}}</label>
+        <input ng-model="product.name" />
+        <p>{{product.name}}</p>
+        <label>{{product.developer}}</label>
+        <input ng-model="product.developer" />
+        <p>{{product.developer}}</p>
+        <label>{{product.price|currency}}</label>
+        <input ng-model="product.price" />
+        <p>{{product.price|currency}}</p>
+        <button ng-click="change({{product}})">Change Product</button>
+    </form>
+
+
+
+</div>

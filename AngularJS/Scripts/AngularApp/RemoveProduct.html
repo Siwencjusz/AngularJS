@@ -1,0 +1,12 @@
+﻿<div class="main" ng-controller="productManagement">
+
+    <table>
+        <tr ng-repeat="item in items" class="item-unchecked">
+            <td><b>amount:</b> {{item.amount}} -</td>
+            <td><b>name:</b> {{item.name}} -</td>
+            <td>
+                <button ng-click="removeItem($index)">remove</button>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+﻿<div class="main" ng-controller="productManagement">
+    
+    <div >
+        <table border="1" style="width:100%">
+            <caption>Products</caption>
+            <tr ng-repeat="product in products">
+                <td>{{product.name}}</td>
+                <td>{{product.developer}}</td>
+                <td>{{product.price|currency}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
